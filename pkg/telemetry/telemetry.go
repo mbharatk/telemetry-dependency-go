@@ -24,6 +24,7 @@ func (SegmentClient SegmentClient) CloseClient() error {
 	if err != nil {
 		return fmt.Errorf("An Error Occurred while trying to close client %v: ", err)
 	}
+
 	return nil
 }
 
@@ -75,7 +76,6 @@ func (segmentClient SegmentClient) TrackTelemetry(userId string, event string, p
 	if len(event) == 0 {
 		return fmt.Errorf("length of \"event\" must be greater than 0")
 	}
-	fmt.Println(segmentClient.client)
 	err := segmentClient.client.Enqueue(analytics.Track{
 		UserId:     userId,
 		Event:      event,
