@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/AkshayBhansali18/telemetry-analytics-go-dependency/pkg/constants"
+	"github.com/AkshayBhansali18/telemetry-dependency-go/pkg/constants"
 	"gopkg.in/segmentio/analytics-go.v3"
 )
 

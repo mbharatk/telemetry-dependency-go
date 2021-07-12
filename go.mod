@@ -1,4 +1,4 @@
-module github.com/AkshayBhansali18/telemetry-analytics-go-dependency
+module github.com/AkshayBhansali18/telemetry-dependency-go
 
 go 1.16
 
